@@ -43,3 +43,27 @@ export interface BoardProps {
 export interface ShipProps {
   length: number
 }
+
+export interface HarbourProps {
+  gameState: any
+  p1PlacingShip: any
+  p1AvailableShips: any
+  setP1PlacingShip: any
+  p2PlacingShip: any
+  p2AvailableShips: any
+  setP2PlacingShip: any
+}
+
+export interface AttackBoardProps {
+  player: any
+  name: string | any
+  formData: FormData
+  gameState: string
+  setGameState: string
+  attack: any
+  setAttack: any
+  finalBoard: any
+  comAttack: any
+  setComAttack: any
+  p1FinalBoard: any
+}

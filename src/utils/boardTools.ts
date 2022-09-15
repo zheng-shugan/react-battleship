@@ -1,6 +1,7 @@
 import * as BLOCK_STATE from './blockState'
 import * as SHIPS from './ships'
 import { Ship, Position } from '../types'
+import board from '../components/Board/Board'
 
 const ROWS: number = 8
 const COLS: number = 8
@@ -129,6 +130,27 @@ export const canBePlaced = (
       return 'OVERFLOW'
     }
   }
+}
+
+/**
+ * Rending now position
+ *
+ * @param board the game board
+ * @param position position
+ * */
+export const showSelectBlock = (board: Array<any>, position: Position) => {
+  if (position.row === null) {
+    return board
+  }
+
+  const boardCopy = [...board]
+  const { row, col } = position
+  const index = coordinateToIndex(row, col)
+  if (boardCopy[index] === BLOCK_STATE.EMPTY) {
+    boardCopy[index] = BLOCK_STATE.SELECTING
+  }
+
+  return boardCopy
 }
 
 /**
