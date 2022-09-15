@@ -18,7 +18,7 @@ import {
 } from '@mui/material'
 import { WelcomeProps } from '../../types'
 import shipGroup from '/shipGroup.png'
-import './welcome.scss'
+import './welcome.css'
 
 const Welcome = ({ setGameState, formData, setFormData }: WelcomeProps) => {
   const context = useContext(Context)
