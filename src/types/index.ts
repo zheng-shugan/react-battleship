@@ -72,3 +72,9 @@ export interface DatCardProps {
   name: string
   attack: any
 }
+
+export interface MiniBoardProps {
+  finalBoard: any
+  name: string
+  player: string
+}
