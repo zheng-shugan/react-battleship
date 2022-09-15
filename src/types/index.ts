@@ -39,3 +39,7 @@ export interface BoardProps {
   finalBoard: any
   comBoard: any
 }
+
+export interface ShipProps {
+  length: number
+}
