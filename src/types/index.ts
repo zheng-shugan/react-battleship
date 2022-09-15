@@ -67,3 +67,8 @@ export interface AttackBoardProps {
   setComAttack: any
   p1FinalBoard: any
 }
+
+export interface DatCardProps {
+  name: string
+  attack: any
+}
